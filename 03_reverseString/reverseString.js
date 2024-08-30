@@ -1,13 +1,17 @@
 const reverseString = function(text) {
     let reverseString = '';
-    const textArray = [];
-    for (let letter of text) {
-        textArray.push(letter);
-    }
 
-    for (let i = textArray.length-1; i >= 0; i--) {
-        reverseString += textArray[i];
-    }
+    // const textArray = [];
+    // for (let letter of text) {
+    //     textArray.push(letter);
+    // }
+
+    // for (let i = textArray.length-1; i >= 0; i--) {
+    //     reverseString += textArray[i];
+    // }
+
+    reverseString += text.split('').reverse().join('');
+    
     return reverseString;
 };
 
